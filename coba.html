@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      const cars= {
+            "id" : "6",
+            "plate": "DBH-3491",
+            "transmission": "Automatic",
+            "manufacture": "Ford",
+            "model": "F150",
+            "available": true,
+            "type": "Sedan",
+            "year": 2022,
+            "options": [
+              "Cruise Control",
+              "Tinted Glass",
+              "Tinted Glass",
+              "Tinted Glass",
+              "AM/FM Stereo"
+            ],
+            "specs": [
+              "Brake assist",
+              "Leather-wrapped shift knob",
+              "Glove box lamp",
+              "Air conditioning w/in-cabin microfilter",
+              "Body color folding remote-controlled pwr mirrors",
+              "Dual-stage front airbags w/occupant classification system"
+            ]
+        };
+
+        for(const properti in cars){
+            if(cars['type'] == "Sedan"){
+             document.writeln(`<p>${properti} : ${cars[properti]}</p>`);
+            }
+        }
+          
+        
+    </script>
+</body>
+</html>
